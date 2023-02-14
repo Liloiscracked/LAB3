@@ -10,6 +10,10 @@ public class Sorter {
     public static void sort(int[] arr) {
         selectionSort(arr);
     }
+
+    public void Sort(int[] arr){
+        InsertionSort(arr);
+    }
     
     public static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++){
@@ -23,5 +27,18 @@ public class Sorter {
             arr[index] = arr[i];
             arr[i] = smallerNumber;
         }
+    }
+
+    public void InsertionSort(int [] array) {
+            int n = array.length;
+            for (int i = 1; i < n; ++i) {
+                int key = array[i];
+                int j = i - 1;
+                while (j >= 0 && array[j] > key) {
+                    array[j + 1] = array[j];
+                    j = j - 1;
+                }
+                array[j + 1] = key;
+            }
     }
 }
