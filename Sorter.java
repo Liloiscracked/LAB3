@@ -7,6 +7,10 @@ public class Sorter {
         for(int elem : intarray)
             System.out.println(elem);
     }
+    public static void sort(int[] arr) {
+        selectionSort(arr);
+    }
+    
     public static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++){
             int index = i;
