@@ -8,6 +8,10 @@ public class Sorter {
         System.out.println("v2");
     }
 
+    public static void sort(int[] arr) {
+        sort(arr);
+    }
+
 public class InsertionSort {
 	/*Function to sort array using insertion sort*/
 	void sort(int arr[])
