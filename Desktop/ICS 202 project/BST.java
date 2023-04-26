@@ -24,7 +24,8 @@ public class BST<T extends Comparable<T>> extends BinaryTree<T> {
             int result = el.compareTo(p.data);
 
             if(result == 0)
-                throw new IllegalArgumentException("Duplicate key.");
+                continue;
+                //throw new IllegalArgumentException("Duplicate key.");
             else if (result < 0)
                 p = p.left;
             else

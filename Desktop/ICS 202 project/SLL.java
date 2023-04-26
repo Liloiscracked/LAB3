@@ -17,7 +17,8 @@ public class SLL<T>{
         }
     }
 
-    protected SLLNode<T> head, tail;
+    protected SLLNode<T> head;
+    protected SLLNode<T> tail;
     public SLL() {
         head = tail = null;
     }

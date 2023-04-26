@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class AVLTree<T extends Comparable<T>> extends BST<T> {
 
     protected int height;
@@ -67,8 +70,8 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
             int balanceFactor = getBalanceFactor();
 
             if(balanceFactor == -2) {
-                System.out.println("Balance factor = " + balanceFactor);
-                System.out.println("Balancing node with el: "+root.data);
+                //System.out.println("Balance factor = " + balanceFactor);
+                //System.out.println("Balancing node with el: "+root.data);
 
 
                 if(getRightAVL().getBalanceFactor() == 0 && getLeftAVL().getBalanceFactor() == -1)    /// special case
@@ -80,8 +83,8 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
             }
 
             else if(balanceFactor == 2) {
-                System.out.println("Balance factor = " + balanceFactor);
-                System.out.println("Balancing node with el: "+root.data);
+                //System.out.println("Balance factor = " + balanceFactor);
+                //System.out.println("Balancing node with el: "+root.data);
 
                 if(getRightAVL().getBalanceFactor() == 0)         /// special case that cannot be done
                     rotateLeft();                                /// by double rotations
@@ -102,7 +105,7 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
     }
     //Task 1
     protected void rotateRight() {
-        System.out.println("RIGHT ROTATION");
+       // System.out.println("RIGHT ROTATION");
         // to be completed by students
         BTNode<T> tempNode = root.right;
         root.right = root.left;
@@ -119,7 +122,7 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
     }
 
     protected void rotateLeft() {
-        System.out.println("LEFT ROTATION");
+        //System.out.println("LEFT ROTATION");
         BTNode<T> tempNode = root.left;
         root.left = root.right;
         root.right = root.left.right;
@@ -136,7 +139,7 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
 
     protected void rotateLeftRight()
     {
-        System.out.println("Double Rotation...");
+        //System.out.println("Double Rotation...");
         getLeftAVL().rotateLeft();
         getLeftAVL().adjustHeight();
         this.rotateRight();
@@ -144,7 +147,7 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
     }
     protected void rotateRightLeft()
     {
-        System.out.println("Double Rotation...");
+        //System.out.println("Double Rotation...");
         // to be completed by students
         getRightAVL().rotateRight();
         getRightAVL().adjustHeight();
@@ -221,6 +224,20 @@ public class AVLTree<T extends Comparable<T>> extends BST<T> {
             diffCount++;
         }
         return diffCount == 1;
+    }
+    public SLL<T> collect(){
+        SLL<T> sll = new SLL<>();
+        traverse(this.root,sll);
+        return sll;
+    }
+    private void traverse(BTNode node,SLL<T> list){
+        if(node == null)
+            return;
+        else {
+            list.addToTail((T) node.data);
+            traverse(node.left,list);
+            traverse(node.right,list);
+        }
     }
 
 }
