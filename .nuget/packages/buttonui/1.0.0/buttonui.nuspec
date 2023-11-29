@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ButtonUI</id>
+    <version>1.0.0</version>
+    <title>ButtonUI</title>
+    <authors>Bald Ibis</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Modern Rounded Button</description>
+    <copyright>Copyright ©  2022</copyright>
+    <dependencies />
+  </metadata>
+</package>

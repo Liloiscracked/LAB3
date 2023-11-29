@@ -1,0 +1,4 @@
+print('Hello, world!')
+20 * 20
+help(length)
+source("/Users/medoaljoudi/Desktop/Data science/scores1.csv")

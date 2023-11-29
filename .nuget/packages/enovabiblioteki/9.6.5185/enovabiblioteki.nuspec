@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>EnovaBiblioteki</id>
+        <version>9.6.5185</version>
+        <title>Biblioteki do systemu enova</title>
+        <authors>Soneta sp. z o.o.</authors>
+        <owners>Soneta sp. z o.o.</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Biblioteki do enova w wersji 9.6.5185</description>
+        <copyright>2014 Soneta sp. z o.o.</copyright>
+        <language>pl-PL</language>
+        <tags>enova Soneta</tags>
+    </metadata>
+</package>

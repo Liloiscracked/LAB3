@@ -1,0 +1,19 @@
+{
+  "rise": {
+    "scroll": true
+  },
+  "load_extensions": {
+    "rise/main": true,
+    "hinterland/hinterland": true,
+    "move_selected_cells/main": true,
+    "scroll_down/main": true,
+    "spellchecker/main": true,
+    "splitcell/splitcell": true,
+    "toc2/main": true
+  },
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  }
+}
