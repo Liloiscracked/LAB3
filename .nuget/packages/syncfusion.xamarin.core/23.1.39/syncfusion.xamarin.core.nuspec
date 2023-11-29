@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Syncfusion.Xamarin.Core</id>
+    <version>23.1.39</version>
+    <title>Syncfusion Xamarin Core</title>
+    <authors>Syncfusion Inc.</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>syncfusion_logo.png</icon>
+    <projectUrl>https://www.syncfusion.com/?utm_source=nuget&amp;utm_medium=listing</projectUrl>
+    <description>This package provides the functionality to utilize the features of Syncfusion Xamarin TextInputLayout, Gradient View, Effects View, Avatar view, Border, and Shimmer.</description>
+    <releaseNotes>https://help.syncfusion.com/xamarin/release-notes/v23.1.39?utm_source=nuget&amp;utm_medium=listing</releaseNotes>
+    <copyright>Copyright 2001 - 2023 Syncfusion Inc.</copyright>
+    <tags>syncfusion syncfusion.xamarin xamarin text-input-layout floating-entry xamarin-floating-label xamarin-floating-entry xamarin-floating-editor floating-label avatar shimmer effects animation gradient rounded-corner circle-image border</tags>
+    <readme>README.md</readme>
+    <dependencies>
+      <dependency id="Xamarin.Forms" version="5.0.0.2012" />
+      <dependency id="Syncfusion.Licensing" version="23.1.39" />
+    </dependencies>
+  </metadata>
+</package>

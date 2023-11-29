@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Syncfusion.XlsIO.WinForms</id>
+    <version>23.1.38</version>
+    <title>Create, Read and Edit Excel file in Windows Forms using Syncfusion XlsIO library</title>
+    <authors>Syncfusion Inc.</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>syncfusion_logo.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://www.syncfusion.com/?utm_source=nuget&amp;utm_medium=listing</projectUrl>
+    <description>This package provides the functionality to utilize the features of Syncfusion WinForms Excel library and more.</description>
+    <releaseNotes>https://help.syncfusion.com/windowsforms/release-notes/v23.1.38?utm_source=nuget&amp;utm_medium=listing</releaseNotes>
+    <copyright>Copyright 2001 - 2023 Syncfusion Inc.</copyright>
+    <tags>syncfusion syncfusion.windowsforms windowsforms syncfusion.xlsio excel xls xlsx xlsio chart csv formula pivot-table spreadsheet worksheet import-to-excel export-to-excel .net winforms</tags>
+    <dependencies>
+      <dependency id="Syncfusion.Licensing" version="23.1.38" />
+      <dependency id="Syncfusion.Compression.Base" version="23.1.38" />
+    </dependencies>
+  </metadata>
+</package>

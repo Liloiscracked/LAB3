@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Attributes</name></assembly>
+<members>
+<member name="T:Form.Attributes.OrmState">
+<Description>Stores the flavor And context used for a particular connection.
+ Takes the connection string and context.
+</Description>
+</member>
+<member name="T:Form.Attributes.SqlMapping">
+<Description>A record type which holds the information required to map across BE And DB. </Description>
+</member>
+<member name="T:Form.Attributes.OnAttribute">
+<Description>An attribute type which allows the specification of what fields/columns to join on to bring in ByJoin fields/columns... see ByJoinAttribute</Description>
+</member>
+<member name="T:Form.Attributes.ByJoinAttribute">
+<Description>An attribute type which allows the specification of some FSharp Record Type fields being sourced via joinery</Description>
+</member>
+<member name="T:Form.Attributes.ForeignKeyAttribute">
+<Description>An attribute type which specifies a Column name</Description>
+</member>
+<member name="T:Form.Attributes.PrimaryKeyAttribute">
+<Description>An attribute type which specifies a Column name</Description>
+</member>
+<member name="T:Form.Attributes.ColumnAttribute">
+<Description>An attribute type which specifies a Column name</Description>
+</member>
+<member name="T:Form.Attributes.TableAttribute">
+<Description>An attribute type which specifies a table name</Description>
+</member>
+<member name="T:Form.Attributes.SchemaAttribute">
+<Description>An attribute type which specifies a schema name</Description>
+<Warning>Not Implemented, don't bother using yet...</Warning>
+</member>
+</members>
+</doc>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FORM</name></assembly>
+<members>
+<member name="M:Form.Orm.deleteWhere``1(Form.Attributes.OrmState,Microsoft.FSharp.Core.FSharpOption{System.Data.Common.DbTransaction},System.String)">
+ <Warning> Running this function is equivalent to DELETE 
+ FROM table WHERE whereClause </Warning>
+</member>
+<member name="M:Form.Orm.generateReader(Form.Attributes.OrmState,System.String)">
+<Description>
+ Takes a function of IDataReader -> Result< 't seq, exn> (see FORMs consumeReader function as example) to 
+ transfer the results of executing the specified sql against the specified database given by state into an 
+ arbitrary type 't, defined by you in the readerFunction.
+ </Description>
+</member>
+<member name="M:Form.Orm.consumeReader``1(Form.Attributes.OrmState,System.Data.IDataReader)">
+<Description> Takes a reader of type IDataReader and a state of type OrmState -> consumes the reader and returns a sequence of type ^T.</Description>
+</member>
+<member name="P:Form.Orm._toOptions">
+<summary>
+ **Do not use.** This is internal to Form and cannot be hidden due to inlining. 
+ We make no promises your code won&apos;t break in the future if you use this.
+</summary>
+</member>
+<member name="P:Form.Orm._mappings">
+<summary>
+ **Do not use.** This is internal to Form and cannot be hidden due to inlining. 
+ We make no promises your code won&apos;t break in the future if you use this.
+</summary>
+</member>
+<member name="M:Form.Orm.connect(Form.Attributes.OrmState)">
+<Description>Stores the flavor And context used for a particular connection.</Description>
+</member>
+</members>
+</doc>

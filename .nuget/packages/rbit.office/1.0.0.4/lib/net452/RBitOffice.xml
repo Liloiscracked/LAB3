@@ -1,0 +1,354 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RBitOffice
+</name>
+</assembly>
+<members>
+<member name="T:RBit.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:RBit.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:RBit.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:RBit.ConfigurationTools.EditConnectionStringForm.#ctor(RBit.ConfigurationTools.ConfigurationEditorForm,System.String)">
+ <summary>
+ Creates a new instance of the editor for the connection string matching the given name.
+ </summary>
+ <param name="connectionStringName"></param>
+</member>
+<member name="M:RBit.ReportManagerBase`1.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Creates a new instance of this report manager with the given Excel template file.
+ </summary>
+ <param name="templateFileName">The full path and file name of the corresponding .xltx file.</param>
+ <param name="dataSheetName">The name of the worksheet containing the named ranges. "Data" by default.</param>
+ <param name="reportSheetName">The name of the worksheet that should be printed. "Report" by default.</param>
+</member>
+<member name="M:RBit.ReportManagerBase`1.GetPropertyNames(System.String,System.Reflection.PropertyInfo)">
+ <summary>
+ Gets a list of the names of all nested properties in dot-notation format.
+ </summary>
+ <param name="containerName">The name of the containing property or class (or blank if not applicable).</param>
+ <param name="prop">The current <see cref="T:System.Reflection.PropertyInfo"/> object.</param>
+ <returns></returns>
+</member>
+<member name="M:RBit.ReportManagerBase`1.Load(`0)">
+ <summary>
+ Loads the values from the <typeparamref name="TReportModel"/> class into the <see cref="F:RBit.ReportManagerBase`1.Data"/> dictionary.
+ </summary>
+ <param name="reportModel">An instance of the <typeparamref name="TReportModel"/> class that corresponds to this report manager.</param>
+</member>
+<member name="M:RBit.ReportManagerBase`1.BuildReport">
+ <summary>
+ Creates a new PDF-formatted report using the values from the currently loaded instance of <typeparamref name="TReportModel"/>.
+ </summary>
+ <returns>A byte array representing the new report.</returns>
+</member>
+<member name="T:RBit.ReportManagerBase`1.InvalidPropertyTypeException">
+ <summary>
+ Represents an exception thrown when one of the properties in the dot-delimited property path name (i.e., the named range key) is not a valid type.
+ </summary>
+</member>
+<member name="M:RBit.ReportManagerBase`1.InvalidPropertyTypeException.#ctor(System.String)">
+ <summary>
+ Represents an exception thrown when the last property in the dot-delimited property path name (i.e., the named range key) is not a valid type.
+ </summary>
+ <param name="fullname">The full name of the property path.</param>
+</member>
+<member name="M:RBit.ReportManagerBase`1.InvalidPropertyTypeException.#ctor(System.String,System.String)">
+ <summary>
+ Represents an exception thrown when one of the properties in the dot-delimited property path name (i.e., the named range key) is not a valid type.
+ </summary>
+ <param name="fullname">The full name of the property path.</param>
+ <param name="propname">The name of the property that has an invalid type.</param>
+</member>
+<member name="T:RBit.ReportManagerBase`1.PropertyNameMismatchException">
+ <summary>
+ Occurs when a section of one or more dot-delimited proeprty names (i.e., the named range keys) do not match the name of the corresponding nested property.
+ </summary>
+</member>
+<member name="T:RBit.DataTableExtensions">
+ <summary>
+ RBit module containing extension methods for use with the <see cref="T:System.Data.DataTable"/> type.
+ </summary>
+</member>
+<member name="M:RBit.DataTableExtensions.AddNumberFormatProperty(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ Adds the given number format string to a new extension property (titled "NumberFormat") for the column matching the given column name.
+ </summary>
+ <param name="aDataTable"></param>
+ <param name="ColumnName">The column name that can be used to lookup its corresponding DataColumn in the current table.</param>
+ <param name="strFormat">The number format string that will be stored in the new extension property.</param>
+</member>
+<member name="M:RBit.DataTableExtensions.AddNumberFormatProperty(System.Data.DataTable,System.String[],System.String)">
+ <summary>
+ Adds the given number format string to a new extension property (titled "NumberFormat") for each column matching the given column name.
+ </summary>
+ <param name="aDataTable"></param>
+ <param name="ColumnNames">An array of column names that can be used to lookup their corresponding DataColumns in the current table.</param>
+ <param name="strFormat">The number format string that will be stored in the new extension property.</param>
+</member>
+<member name="T:RBit.CollectionExtensions">
+ <summary>
+ Contains extension methods for use with certain types implementing the <see cref="T:System.Collections.ICollection"/> interface.
+ </summary>
+</member>
+<member name="M:RBit.CollectionExtensions.ToBindingList``1(System.Collections.Generic.IList{``0})">
+ <summary>
+ Returns a new instance of BindingList(Of T) using the given List(Of T).
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="aList"></param>
+ <returns></returns>
+</member>
+<member name="M:RBit.CollectionExtensions.CreateBindingSource``1(System.ComponentModel.BindingList{``0})">
+ <summary>
+ Creates a new instance of BindingSource using the given BindingList(Of T) as its DataSource property.
+ </summary>
+ <typeparam name="T">The type of item contained within the BindingList(Of T).</typeparam>
+ <param name="aBindingList"></param>
+ <returns>The new BindingSource.</returns>
+</member>
+<member name="M:RBit.CollectionExtensions.ToBindingSource``1(System.ComponentModel.BindingList{``0})">
+ <summary>
+ Creates a new instance of BindingSource using the given BindingList(Of T) as its DataSource property.
+ </summary>
+ <typeparam name="T">The type of item contained within the BindingList(Of T).</typeparam>
+ <param name="aBindingList"></param>
+ <returns>The new BindingSource.</returns>
+</member>
+<member name="M:RBit.CollectionExtensions.BuildSelectListForListControl``2(System.Collections.Generic.IList{``0},System.Windows.Forms.ListControl@,System.String,System.String,System.String)">
+ <summary>
+ Configures a <see cref="T:System.Windows.Forms.ListControl"/> to use a new <see cref="T:System.Windows.Forms.BindingSource"/>, created using syntax similar to the creation of an MVC SelectList, including an <paramref name="optionLabel"/> with a null value.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="aList"></param>
+ <param name="displayMember">The name of the member containing the text to display for each item.</param>
+ <param name="valueMember">The name of the member containing the value for each item.</param>
+ <param name="optionLabel">The option label representing an item with no value.</param>
+ <param name="control">The <see cref="T:System.Windows.Forms.ListControl"/> object that will be assigned the new <see cref="T:System.Windows.Forms.BindingSource"/>.</param>
+ <typeparam name="TValue">The type of the value of an item in the collection.</typeparam>
+ <returns>A tuple containing (1) the resulting <see cref="T:System.ComponentModel.BindingList`1"/>, and (2) the resulting <see cref="T:System.Windows.Forms.BindingSource"/>.</returns>
+</member>
+<member name="T:Microsoft.Office.Interop.Excel.RbitExcelTools">
+ <summary>
+ RBit module containing extension methods for use with object types implementing the Excel <see cref="T:Microsoft.Office.Interop.Excel.ListObject"/> interface.
+ </summary>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.CleanEscape(Microsoft.Office.Interop.Excel.Workbook,Microsoft.Office.Interop.Excel.Workbook[])">
+ <summary>
+ Closes the given workbooks and returns the user to the original workbook.
+ </summary>
+ <param name="originalWorkbook">The original workbook.</param>
+ <param name="newWorkbooks">One or more new workbooks that need to be closed.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.InsertRow(System.Int64,Microsoft.Office.Interop.Excel.Worksheet,System.Boolean)">
+ <summary>
+ Insert a new row into the given Excel worksheet at the given location.
+ </summary>
+ <param name="rowNumber">The row number where we will insert a new row.</param>
+ <param name="workSheet">The worksheet in which we will insert the new row.</param>
+ <param name="insertBefore">Indicates whether we should insert the new row above or below the specified row number.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.nameSheet(System.String,Microsoft.Office.Interop.Excel.Workbook)">
+ <summary>
+ Returns an unused version of the given sheet name for the given workbook.
+ </summary>
+ <param name="SheetName">The desired sheet name.</param>
+ <param name="bReport">The target workbook.</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.GetExcelApplication">
+ <summary>
+ Gets an existing instance of Excel if one is running, or creates a new instance and then returns that instead.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.ApplyNumberFormatProperties(Microsoft.Office.Tools.Excel.ListObject)">
+ <summary>
+ Uses the ExtendedProperties collection of the underlying DataTable to apply custom formatting to the data.
+ </summary>
+ <param name="aListObject"></param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.ApplyNumberFormatProperties(Microsoft.Office.Interop.Excel.ListObject)">
+ <summary>
+ Uses the ExtendedProperties collection of the underlying DataTable to apply custom formatting to the data.
+ </summary>
+ <param name="aListObject"></param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.HasHeaderName(Microsoft.Office.Interop.Excel.ListObject,System.String,System.Boolean)">
+ <summary>
+ Checks if the ListObject has a header with the given column name.
+ </summary>
+ <param name="aListObject"></param>
+ <param name="HeaderName">The header-name for which you would like to search.</param>
+ <param name="IgnoreCase">A boolean value indicating whether the search should be case-sensitive.</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.HasHeaderName(Microsoft.Office.Tools.Excel.ListObject,System.String,System.Boolean)">
+ <summary>
+ Checks if the ListObject has a header with the given column name.
+ </summary>
+ <param name="aListObject"></param>
+ <param name="HeaderName">The header-name for which you would like to search.</param>
+ <param name="IgnoreCase">A boolean value indicating whether the search should be case-sensitive.</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.GetCell(Microsoft.Office.Interop.Excel.ListRow,System.Int64)">
+ <summary>
+ Gets a single cell from the current <see cref="T:Microsoft.Office.Interop.Excel.ListRow"/> using the given column (not sheet) index.
+ </summary>
+ <param name="aListRow"></param>
+ <param name="columnIndex">The column index relative to the ListRow's range.</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomFormatType">
+ <summary>
+ Pre-defined set of Excel cell styles.
+ </summary>
+</member>
+<member name="F:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomFormatType.TitleFormat">
+ <summary>
+ Large, bold, light font centered on a dark interior. Multiple cells will be merged.
+ </summary>
+</member>
+<member name="F:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomFormatType.HeaderFormat">
+ <summary>
+ Bold, dark font centered on a lightly colored interior.
+ </summary>
+</member>
+<member name="F:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomFormatType.AlternateRowColorFormat">
+ <summary>
+ Normal font on a very lightly colored interior.
+ </summary>
+</member>
+<member name="T:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomColorTheme">
+ <summary>
+ Color theme. Typically used in conjunction with a CustomFormatType.
+ </summary>
+</member>
+<member name="F:Microsoft.Office.Interop.Excel.RbitExcelTools.CustomColorTheme.Blue">
+ <summary>
+ Common dark/light-blue Excel color scheme.
+ </summary>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.AddAllBorders(Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Applies the xlContinuous line style to all borders of all cells in the range.
+ </summary>
+ <param name="aRange"></param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.Format(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.RbitExcelTools.CustomFormatType,Microsoft.Office.Interop.Excel.RbitExcelTools.CustomColorTheme)">
+ <summary>
+ Applies a custom, pre-defined set of styles to a given range.
+ </summary>
+ <param name="aRange">The range to which the styles will be applied.</param>
+ <param name="FormatType">The pre-defined set of styles to use.</param>
+ <param name="ColorTheme">The color theme by which the FormatType will abide.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.AddFittedComment(Microsoft.Office.Interop.Excel.Range,System.String)">
+ <summary>
+ Adds a comment to a cell or range of cells using the given Text value, then adjusts the size of the comment box to fit its contents.
+ </summary>
+ <param name="aRange"></param>
+ <param name="Text">The comment to add.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.SetError(Microsoft.Office.Interop.Excel.Range,System.String)">
+ <summary>
+ Formats the cell to indicate an error and adds a comment.
+ </summary>
+ <param name="aRange"></param>
+ <param name="msg">The error message.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.RemoveError(Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Removes any error formatting and commentary.
+ </summary>
+ <param name="aRange"></param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.GetErrorMessage(Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Gets the error message from the comments section if one exists.
+ </summary>
+ <param name="aRange"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.HasError(Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Checks if the cell has a custom error.
+ </summary>
+ <param name="aRange"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.RowInsert(Microsoft.Office.Interop.Excel.Worksheet,System.Int64,System.Boolean)">
+ <summary>
+ Inserts a new row before or after the given row number in the Excel Worksheet.
+ </summary>
+ <param name="aWorksheet"></param>
+ <param name="RowNumber">Row number around which a row will be inserted.</param>
+ <param name="insertBefore">Indicates whether the row will be inserted before the given row number.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.RowInsert(Microsoft.Office.Tools.Excel.WorksheetBase,System.Int64,System.Boolean)">
+ <summary>
+ Inserts a new row before or after the given row number in the Excel Worksheet.
+ </summary>
+ <param name="aWorksheetBase"></param>
+ <param name="RowNumber">Row number around which a row will be inserted.</param>
+ <param name="insertBefore">Indicates whether the row will be inserted before the given row number.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.Dub(Microsoft.Office.Interop.Excel.Worksheet,System.String)">
+ <summary>
+ Names the worksheet using an unused version of the given sheet name.
+ </summary>
+ <param name="aWorksheet"></param>
+ <param name="Name">The desired sheet name.</param>
+</member>
+<member name="M:Microsoft.Office.Interop.Excel.RbitExcelTools.Dub(Microsoft.Office.Tools.Excel.WorksheetBase,System.String)">
+ <summary>
+ Names the worksheet using an unused version of the given sheet name.
+ </summary>
+ <param name="aWorksheetBase"></param>
+ <param name="Name">The desired sheet name.</param>
+</member>
+<member name="T:Microsoft.Office.NumberFormats">
+ <summary>
+ Contains properties for each default number format in Excel.
+ </summary>
+</member>
+<member name="T:System.Windows.Forms.ArbitraryWindow">
+ <summary>
+ Creates a reference to a <see cref="T:System.Windows.Forms.IWin32Window"/> with the given <see cref="T:System.IntPtr"/> value.
+ </summary>
+</member>
+<member name="M:System.Windows.Forms.ArbitraryWindow.#ctor(System.IntPtr)">
+ <summary>
+ Creates a new <see cref="T:System.Windows.Forms.ArbitraryWindow"/> instance to be used as a parent for a modal dialog box.
+ </summary>
+ <param name="handle"></param>
+</member>
+<member name="T:System.Windows.Forms.RBitWindowUtilities">
+ <summary>
+ RBit module containing helpful utilties for generating windows and forms.
+ </summary>
+</member>
+<member name="M:System.Windows.Forms.RBitWindowUtilities.ToWindow(System.Int32)">
+ <summary>
+ Creates an <see cref="T:System.IntPtr"/> instance using the <see cref="T:System.Int32"/> value, then uses the <see cref="T:System.IntPtr"/> to return a new <see cref="T:System.Windows.Forms.ArbitraryWindow"/> instance. NOTE: Can be used as a parameter within the <see cref="M:System.Windows.Forms.Form.ShowDialog"/> function.
+ </summary>
+ <param name="Hwnd"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>
