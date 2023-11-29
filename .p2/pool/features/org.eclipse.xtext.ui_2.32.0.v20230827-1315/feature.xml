@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.xtext.ui"
+      label="%featureName"
+      version="2.32.0.v20230827-1315"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      Copyright (c) 2009, 2018 itemis AG (http://www.itemis.eu) and others.
+
+This program and the accompanying materials 
+are made available under the terms of the Eclipse Public License 2.0 
+which is available at http://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.xtext.runtime"
+         version="2.32.0.v20230827-1315"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui"
+         download-size="1936"
+         install-size="4113"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.source"
+         download-size="1032"
+         install-size="2845"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.ui"
+         download-size="252"
+         install-size="555"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.ui.source"
+         download-size="137"
+         install-size="400"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared"
+         download-size="20"
+         install-size="32"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.source"
+         download-size="16"
+         install-size="27"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.jdt38"
+         download-size="21"
+         install-size="34"
+         version="2.32.0.v20230827-1315"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.jdt38.source"
+         download-size="14"
+         install-size="24"
+         version="2.32.0.v20230827-1315"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.shared"
+         download-size="62"
+         install-size="125"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.shared.source"
+         download-size="30"
+         install-size="70"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.ecore"
+         download-size="16"
+         install-size="22"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.ecore.source"
+         download-size="14"
+         install-size="19"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codemining"
+         download-size="21"
+         install-size="37"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codemining.source"
+         download-size="13"
+         install-size="23"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates"
+         download-size="196"
+         install-size="454"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.source"
+         download-size="137"
+         install-size="663"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ide"
+         download-size="135"
+         install-size="384"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ide.source"
+         download-size="94"
+         install-size="726"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ui"
+         download-size="135"
+         install-size="297"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ui.source"
+         download-size="91"
+         install-size="226"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.edit"
+         download-size="250"
+         install-size="405"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.edit.source"
+         download-size="99"
+         install-size="317"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ide"
+         download-size="495"
+         install-size="1135"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ide.source"
+         download-size="289"
+         install-size="753"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.m2e"
+         download-size="26"
+         install-size="47"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.m2e.source"
+         download-size="19"
+         install-size="38"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.buildship"
+         download-size="17"
+         install-size="26"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.buildship.source"
+         download-size="13"
+         install-size="21"
+         version="2.32.0.v20230827-1315"
+         unpack="false"/>
+
+</feature>
